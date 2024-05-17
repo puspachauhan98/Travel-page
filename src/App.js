@@ -28,7 +28,7 @@ export default function App(){
     const [ quantity, setQuantity]= useState('');
     function handleSubmit(e){
       e.preventDefault();
-// if(!description) return;
+ if(!description) return;
 
       
       const newItem={description,quantity,packed:false, id:Date.now()};
